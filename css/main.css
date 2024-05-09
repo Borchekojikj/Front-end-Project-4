@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-left: 20%;
+}
+@media (max-width: 768px) {
+  body {
+    padding-left: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.9375rem;
+  font-weight: 700;
+}
+
+.intro {
+  background-color: #FFF;
+  padding: 3.75rem;
+  color: #000;
+  height: 100vh;
+  width: 20%;
+  position: fixed;
+  left: 0;
+}
+@media (max-width: 768px) {
+  .intro {
+    position: static;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.875rem;
+  }
+}
+.intro ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 3.75rem;
+}
+@media (max-width: 768px) {
+  .intro ul {
+    display: none;
+  }
+}
+.intro ul li {
+  margin-top: 0.9375rem;
+}
+.intro ul li a {
+  color: #000;
+}
+.intro ul li:hover {
+  text-decoration: underline;
+}
+.intro .copyright {
+  margin-top: 9.375rem;
+}
+@media (max-width: 768px) {
+  .intro .copyright {
+    display: none;
+  }
+}
+.intro .copyright p {
+  margin-bottom: 0;
+}
+.intro .copyright p span {
+  font-weight: bold;
+}
+.intro .copyright p span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.intro .burger {
+  display: none;
+  border: 1px solid black;
+  padding: 1px 2px;
+}
+@media (max-width: 768px) {
+  .intro .burger {
+    display: block;
+  }
+}
+
+.cards .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards .flex-container .inner {
+  width: 100%;
+  height: 100%;
+}
+.cards .flex-container .inner img {
+  height: 100%;
+  width: 100%;
+}
+.cards .flex-container .flex-item {
+  flex-basis: 33.33%;
+  text-align: center;
+  height: 50vh;
+}
+@media (max-width: 768px) {
+  .cards .flex-container .flex-item {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 425px) {
+  .cards .flex-container .flex-item {
+    flex-basis: 100%;
+  }
+}
+.cards .flex-container .flex-item .hover-text {
+  display: none;
+  position: relative;
+  height: 100%;
+}
+.cards .flex-container .flex-item .hover-text p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  padding: 0.9375rem;
+  transform: translate(-50%, -50%);
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+.cards .flex-container .flex-item:hover .inner {
+  display: none;
+}
+.cards .flex-container .flex-item:hover .hover-text {
+  display: block;
+}/*# sourceMappingURL=main.css.map */
